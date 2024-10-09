@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="homelet_log1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <header>
+        <h1>Homelet</h1>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Login or Continue With</h2>
+            <div class="rows">
+                <div class="social"><!-- social media container-->
+                    <div class="col">
+                        <a href="#" class="fb btn">
+                          <i class="fa fa-facebook fa-fw"></i> Facebook
+                         </a>
+                        <a href="#" class="twitter btn">
+                          <i class="fa fa-twitter fa-fw"></i> Twitter
+                        </a>
+                        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                          </i> Google+
+                        </a>
+                    </div>
+                </div>
+
+                <form action="php/login.php" method="post">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email or Username" required><br><br>
+
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Password"><br><br>
+
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="bottom-container">
+                <div class="row">
+                  <div class="col">
+                    <a href="signup.php" style="color:white" class="btn">Sign up</a>
+                  </div>
+                  <div class="col">
+                    <a href="reset_password.html" style="color:white" class="btn">Forgot password?</a>
+                    <p>Thank you for choosing Homelet</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+</body>
+</html>
